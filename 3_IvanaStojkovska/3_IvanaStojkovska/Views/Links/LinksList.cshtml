@@ -1,0 +1,44 @@
+﻿@model IEnumerable<_3_IvanaStojkovska.Models.Link>
+
+@{
+    ViewBag.Title = "LinksList";
+}
+
+<h2>LinksList</h2>
+
+<form method="get" action="~/Links/LinksList">
+    Filter: <input type="text" name="name" class="input-sm" placeholder="Filter by name" />
+    <input type="submit" value="Filter" class="btn btn-default" />
+</form>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkUrl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+
+    </tr>
+}
+
+</table>

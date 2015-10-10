@@ -1,0 +1,54 @@
+﻿body {
+    table, 
+			th, 
+			td {
+				border: 1px solid gray;
+			}
+			td {
+				width: 200px;
+			}
+			td:first-child{
+				width: 100px;
+			}
+			th {
+				text-align:left;
+			}
+			table {
+				font-size: 20px;
+				margin:20px auto;
+			}
+			.readButton {
+				background-color:#FFF;
+			}
+			.save,
+			.updateButton {
+				background-color:#68A253;
+			}
+			.deleteButton {
+				background-color:#BC4B45;
+			}
+			button {
+				padding:5px 10px 5px;
+			}
+			.save,
+			.updateButton,
+			.deleteButton {
+				color:#FFF;
+			}
+			#details {
+				width:300px;
+				margin:20px auto;
+				display:none;
+			}
+			#content {
+				width:300px;
+				height:200px;
+				border:1px solid black;
+				line-height:25px;
+			}
+			#closeDetails {
+				display:block;
+				float: right;
+			}
+
+}
